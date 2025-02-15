@@ -1,0 +1,94 @@
+/* Hero Section */
+.hero-section {
+    padding: 75px 0;
+    background-color: #f0f8ff; /* Light blue background for a calm feel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 39vh;
+  }
+  
+  /* Container for all counter items */
+  .counter-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+  
+  /* Styling for each counter item */
+  .counter-item {
+   
+    background-color: #00a551; /* Light blue background */
+    color: white;
+    height: 64px;
+    margin-left: 38px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .counter-item h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .counter-item h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* Animation for the counter numbers */
+  .counter-text {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .counter-text.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Hover effect for each counter item */
+  .counter-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Optional: Fade-in animation for the hero section */
+  .hero-section {
+    animation: fadeIn 1.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.pre-post-container{
+  display: flex
+  ;
+      height: 215px;
+      flex-wrap: wrap;
+      gap: 5px;
+      background-color: #fcb417;
+  
+}  
+
+.pre_container img{
+  width: 309px;
+  position: relative;
+  top: 3px;
+}

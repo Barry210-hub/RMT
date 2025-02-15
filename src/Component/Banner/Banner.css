@@ -1,0 +1,65 @@
+ /* .banner-main {
+    margin-top: 0.50vw;
+    
+    overflow: hidden;
+  }
+.banner-img{
+ height: 100vh;
+ width: 100vw;
+ width: 100%;
+ opacity: 0;
+ animation: fadeIn 2s forwards;
+
+
+
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+   */
+
+
+/*    
+   .banner-main {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    transition: opacity 1s ease-in-out; 
+  } 
+
+
+   */
+   .banner-main {
+    position: relative;
+    height: 90vh; /* Fixed height to prevent content shift */
+    width: 100%; /* Ensure the banner takes full width */
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure all images take full width */
+    height: 100%; /* Ensure all images take full height */
+    object-fit: cover; /* Ensures the image covers the entire banner area */
+    opacity: 0; /* Start with all images hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade effect */
+  }
+  
+  .banner-img.active {
+    opacity: 1; /* Only the active image is visible */
+  }

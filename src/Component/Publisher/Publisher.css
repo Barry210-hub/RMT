@@ -1,0 +1,40 @@
+.app-heading {
+    
+    margin-top: 175px;
+    margin-bottom: 24px;
+}
+.publisher hr{
+    background-color: #616161;
+    text-align: center;
+    width: 128px;
+    position: relative;
+    left: 555px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.carousel-container {
+    width: 100%;           /* Full width */
+    overflow: hidden;      /* Hide content outside the container */
+    position: relative;    /* Relative positioning for the container */
+  }
+  
+  .carousel {
+    margin:50px;
+    display: flex;         /* Use flexbox to align images in a row */
+    animation: scroll 20s linear infinite;  /* Continuous scrolling animation */
+  }
+  
+  .carousel img {
+    height: 60px;          /* Set the height of the images */
+    margin-right: 20px;    /* Add space between images */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);  /* Start off the screen from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* End off the screen to the left */
+    }
+  }

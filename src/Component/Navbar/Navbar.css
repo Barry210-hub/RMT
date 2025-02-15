@@ -1,0 +1,132 @@
+/* .navbar-real{
+    background-color: #bbbdbf;
+    padding: 2vw;
+   
+}
+.list-navbar{
+    font-size: 1.2vw;
+    color: white;
+     display: flex;
+     justify-content: center;
+     list-style: none;
+     gap:  3vw;
+position: relative;
+}
+
+.list-navbar li {
+    transition: transform 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+}
+
+.list-navbar li:hover {
+    color: #626262;
+    font-size: 1.2vw;
+    transform: scale(1.2); 
+}
+.dropdown {
+    display: none;
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    border-radius: 8px;
+    background-color: #d2d7db;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    opacity: 0; 
+    pointer-events: none; 
+    transition: all 0.2s ease; 
+}
+
+
+.list-navbar li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); 
+    pointer-events: auto;
+  
+}
+
+.dropdown li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #626262;
+    color: white;
+} */
+.navbar-real {
+    background-color: #bbbdbf;
+    padding: 2vw;
+    position: relative; /* Ensure navbar is positioned correctly */
+    z-index: 1; /* Ensures navbar stays on top */
+}
+
+.list-navbar {
+    font-size: 1.2vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3vw;
+    position: relative; /* Ensure relative positioning for child elements */
+    z-index: 2; /* Make sure navbar links are above other content */
+}
+
+.list-navbar li {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    position: relative; /* Ensure each list item is relative to navbar */
+    z-index: 3; /* Ensure list items are above the other components */
+}
+
+.list-navbar li:hover {
+    color: #626262;
+    font-size: 1.2vw;
+    transform: scale(1.2);
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 8px;
+    background-color: #d2d7db;
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 9999; /* Ensure dropdown appears above everything */
+}
+
+.list-navbar li:hover .dropdown {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdown li {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.dropdown li:hover {
+    background-color: #626262;
+    color: white;
+}
+
+  @media (max-width:1150px) {
+    .dropdown li {
+        padding: 1rem 0.7rem;
+        cursor: pointer;
+        font-size: 21px;
+    }
+}
+
+

@@ -1,0 +1,136 @@
+
+/* .container-grid {
+ 
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    padding: 62px;
+    justify-items: center;
+    margin-top: 100px;
+    gap: 219px;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+  
+
+  .container {
+   
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    
+    width: 200px;
+    opacity: 0;
+    transition: opacity 1.2s ease, transform 1.2s ease;
+  }
+   */
+ 
+
+/* .container.fade-in {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+
+
+
+  .container.fade-in {
+    opacity: 1;
+    transform: translateY(0); 
+  } */
+  
+  .container-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 62px;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 219px;
+    align-items: center;
+    margin-bottom: 74px;
+  }
+  
+  .container {
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px; /* Adjust the width for better view */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position */
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .container.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Move into place smoothly */
+  }
+  
+  .circle-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 10px;
+    position: relative;
+    left: 24px;
+    z-index: 1;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .line {
+    width: 60%;
+    height: 2px;
+    background-color: #ddd;
+    margin: 10px auto;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .outline {
+    position: absolute;
+    border: 1px solid #dddddd;
+    top: 68px;
+    padding-top: 57px;
+    width: 263px;
+    height: 190px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .outline:hover {
+    background-color: #00a551;
+  }
+  
+  .name:hover {
+    color: white;
+  }
+  
+  .line:hover {
+    background-color: white;
+  }
+  
+  .description:hover {
+    color: white;
+  }
+  
+  .container-grid:hover {
+    cursor: pointer;
+  }

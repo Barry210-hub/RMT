@@ -1,0 +1,21 @@
+.list{
+    padding: 1.5vw;
+    background-color: #00a550;
+    display: flex;
+gap: 3vw;
+font-size: 1.3vw;
+
+font-weight: 200;
+color: rgb(236, 236, 236);
+}
+
+.logo {
+    padding: 1vw;
+    padding-left: 8vw;
+width: 90%;
+
+
+}
+.logo img{
+    width: 80vw;
+}

@@ -1,0 +1,75 @@
+/* Main Container */
+.sponsorship-container {
+    padding: 50px 20px;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start position */
+    transition: opacity 1s ease, transform 1s ease;
+    margin-top: 105px;
+  }
+  
+  .sponsorship-container.fade-in {
+    opacity: 1;
+    transform: translateY(0); /* Move into place smoothly */
+  }
+  
+  /* Heading */
+  .sponsorship-heading {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  
+  /* Container Grid */
+  .sponsorship-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Card */
+  .sponsorship-card {
+    width: 330px;
+    padding: 10px;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .sponsorship-card:hover {
+    transform: translateY(-10px); /* Lift card on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image */
+  .sponsorship-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Donate Button */
+  .donate-button {
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #8f0305;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .donate-button:hover {
+    background-color: #00a650;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
