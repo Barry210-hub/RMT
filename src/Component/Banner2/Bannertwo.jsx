@@ -1,6 +1,6 @@
 import React from 'react';
 import './Bannertwo.css';
-import bantwo from '../../assets/banner 3.png';
+import bantwo from '../../assets/Banner 3.png';
 import { motion } from 'framer-motion';
 
 const Bannertwo = () => {
